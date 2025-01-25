@@ -12,7 +12,17 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        Termina: ['termina', 'sans-serif']
+      },
+      fontWeight: {
+        light: '300',
+        regular: '400',
+        demi: '600',
+        bold: '700'
+      }
     },
   },
-  plugins: [],
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: [require("@tailwindcss/typography")],
 } satisfies Config;
