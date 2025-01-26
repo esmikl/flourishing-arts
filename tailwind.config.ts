@@ -1,28 +1,97 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        primary: {
+          50: '#e6eaf0',
+          100: '#c0c9db',
+          200: '#99a7c3',
+          300: '#7285ab',
+          400: '#546b9a',
+          500: '#35538c',
+          600: '#2e4b83',
+          700: '#264278',
+          800: '#1f386b',
+          900: '#162853',
+        },
+        secondary: {
+          50: '#e3f0f8',
+          100: '#bbdaef',
+          200: '#93c4e5',
+          300: '#6eacd9',
+          400: '#549cd2',
+          500: '#348dd0',
+          600: '#2d7fc3',
+          700: '#226eb2',
+          800: '#175ea1',
+          900: '#004285',
+        },
+        success: {
+          50: '#f7fbe5',
+          100: '#ebf3bf',
+          200: '#deec95',
+          300: '#d0e46a',
+          400: '#c6dd48',
+          500: '#bdd81f',
+          600: '#b1c618',
+          700: '#a1b00c',
+          800: '#919900',
+          900: '#787300',
+        },
+        error: {
+          50: '#fce4e8',
+          100: '#f8bcc7',
+          200: '#f292a2',
+          300: '#eb697f',
+          400: '#e34e65',
+          500: '#dd3b4e',
+          600: '#cd364c',
+          700: '#b83049',
+          800: '#a42a46',
+          900: '#802140',
+        },
+        warning: {
+          50: '#fbfae5',
+          100: '#f6f1c0',
+          200: '#efe797',
+          300: '#e9de6f',
+          400: '#e6d852',
+          500: '#e2d237',
+          600: '#e0c031',
+          700: '#ddaa2a',
+          800: '#d99422',
+          900: '#d26e14',
+        },
+        gray: {
+          1: '#6B747D',
+          2: '#9CA2A8',
+          3: '#CED1D4',
+          4: '#E6E8E9',
+          5: '#F5F6F6',
+        },
+        white: '#fff',
+        text: '#081726',
       },
       fontFamily: {
-        Termina: ['termina', 'sans-serif']
+        Termina: ['termina', 'sans-serif'],
       },
       fontWeight: {
         light: '300',
         regular: '400',
         demi: '600',
-        bold: '700'
-      }
+        bold: '700',
+      },
     },
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require('@tailwindcss/typography')],
 } satisfies Config;
