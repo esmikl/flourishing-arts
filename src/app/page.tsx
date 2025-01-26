@@ -1,15 +1,11 @@
-import Link from 'next/link';
+import Header from '@/components/header';
 
 export default function Home() {
   return (
-    <div className='min-h-screen'>
+    <div>
+      <Header bgColor='dark' />
       <main>
-        <Link
-          href='/about'
-          style={{ color: 'black', textDecoration: 'underline' }}
-        >
-          About Us
-        </Link>
+        <h1>Home</h1>
       </main>
     </div>
   );

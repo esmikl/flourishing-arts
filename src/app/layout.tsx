@@ -31,7 +31,7 @@ export default function RootLayout({
         <link rel='stylesheet' href='https://use.typekit.net/alm5vsf.css' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
-      <body className='font-Termina'>
+      <body className='h-dvh font-Termina'>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>{children}</ThemeProvider>
         </AppRouterCacheProvider>
