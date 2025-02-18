@@ -3,7 +3,7 @@ import ColorLogo from '../assets/Color-Logo.svg';
 import WhiteLogo from '../assets/logo_white.svg';
 import FB from '../assets/Facebook.svg';
 import Instagram from '../assets/Instagram.svg';
-import './header.scss';
+import '../app/styles/header.scss';
 
 interface HeaderProps {
   bgColor?: 'light' | 'dark';
