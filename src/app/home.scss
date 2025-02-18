@@ -2,25 +2,25 @@
   position: relative;
   display: block;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    background-color: var(--text);
-    top: 50%;
-  }
-
-  &::before {
-    left: 0;
-    right: 226px;
-    width: 226px;
-  }
-
-  &::after {
-    left: calc(100% - 110px);
-    right: 16px;
-  }
+  //&::before,
+  //&::after {
+  //  content: "";
+  //  position: absolute;
+  //  height: 4px;
+  //  background-color: var(--white);
+  //  top: 50%;
+  //}
+  //
+  //&::before {
+  //  left: 0;
+  //  right: 226px;
+  //  width: 226px;
+  //}
+  //
+  //&::after {
+  //  left: calc(100% - 110px);
+  //  right: 16px;
+  //}
 }
 
 .home-hero {
