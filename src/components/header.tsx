@@ -13,15 +13,19 @@ export default function Header(props: HeaderProps) {
   const { bgColor } = props;
   return (
     <header
-      className={`md:h-1/3 ${bgColor && bgColor === 'dark' ? 'text-white' : 'text-text'}`}
+      className={`${bgColor && bgColor === 'dark' ? 'text-white' : 'text-text'}`}
     >
       <div>
         <Link href='/'>
-          {bgColor === 'light' && <ColorLogo width='156' height='150' />}
-          {bgColor === 'dark' && <WhiteLogo width='156' height='150' />}
+          {bgColor === 'light' && (
+            <ColorLogo width='156' height='150' className='logo' />
+          )}
+          {bgColor === 'dark' && (
+            <WhiteLogo width='156' height='150' className='logo' />
+          )}
         </Link>
       </div>
-      <div className='flex flex-col'>
+      <div className='nav-wrapper flex flex-col'>
         <ul className='align-center flex justify-end'>
           <li>
             <Link href=''>

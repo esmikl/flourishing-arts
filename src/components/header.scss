@@ -4,6 +4,17 @@ header {
   justify-content: space-between;
   padding: 1.25rem;
   width: 100%;
+  max-width: 1680px;
+  margin: auto;
+}
+
+.logo {
+  max-width: 35vw;
+  max-height: 30vh;
+}
+
+.nav-wrapper {
+  max-width: calc(100% - 35vw);
 }
 
 nav {
