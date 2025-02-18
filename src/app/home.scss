@@ -1,0 +1,36 @@
+.arts-heading {
+  position: relative;
+  display: block;
+  //&::before,
+  //&::after {
+  //  content: "";content
+  //  position: absolute;position
+  //  height: 4px;height
+  //  background-color: var(--text);background-color
+  //  top: 50%;top
+  //}
+  //
+  //&::before {
+  //  left: 0;left
+  //  right: 226px;right
+  //  width: 226px;width
+  //}
+  //
+  //&::after {
+  //  left: calc(100% - 110px);left
+  //  right: 16px;right
+  //}
+}
+
+.home-hero {
+  background-image: url('../assets/lotus_720px.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.home-main {
+  height: 100vh;
+}

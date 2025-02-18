@@ -5,6 +5,10 @@
 :root {
   --background: #fff;
   --foreground: #171717;
+  --white: #fff;
+  --primary: #1f386b;
+  --accent: #6eacd9;
+  --text: #081726;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,4 +21,9 @@
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+h1 {
+  font-size: clamp(2.875rem, 10vw, 8rem);
+  font-weight: bold;
 }
