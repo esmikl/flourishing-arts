@@ -29,7 +29,7 @@
   height: calc(100vh - 190px);
 }
 
-h1 {
+.home-heading {
   font-size: clamp(2.875rem, 10vw, 8rem);
   font-weight: bold;
   max-height: 18vw;
@@ -38,4 +38,16 @@ h1 {
   @media (width >= 1480px) {
     max-height: 10vw;
   }
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 600;
+  margin-bottom: 16px;
 }

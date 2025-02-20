@@ -1,0 +1,23 @@
+.goals-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  &__item {
+    padding: 2rem;
+    min-width: min(100%, 428px);
+    flex: 1;
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 16px;
+    }
+
+    .goals-number {
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+  }
+}

@@ -1,9 +1,11 @@
+@import url('https://use.typekit.net/uxg4ijc.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #fff;
+  --background: #f5f6f6;
   --foreground: #171717;
   --white: #fff;
   --primary: #1f386b;
@@ -23,8 +25,8 @@ body {
   background: var(--background);
 }
 
-main {
+.container {
   max-width: 1680px;
   margin: auto;
-  padding: 2.25rem;
+  padding: 2rem;
 }

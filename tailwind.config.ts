@@ -80,6 +80,11 @@ export default {
         },
         white: '#fff',
         text: '#081726',
+        accent: {
+          yellow: '#EBB63F',
+          green: '#BBBE54',
+          greenVariant: '#E2E2B6',
+        },
       },
       fontFamily: {
         Termina: ['termina', 'sans-serif'],
