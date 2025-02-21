@@ -1,6 +1,7 @@
 import Header from '@/components/header';
 import GoFundMe from '../../assets/gofundme.svg';
 import '../styles/donate.scss';
+import Footer from '@/components/footer';
 
 export default function Page() {
   return (
@@ -50,6 +51,7 @@ export default function Page() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

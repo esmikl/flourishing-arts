@@ -1,5 +1,6 @@
 import Header from '@/components/header';
 import '../styles/about.scss';
+import Footer from '@/components/footer';
 
 export default function Page() {
   return (
@@ -66,6 +67,7 @@ export default function Page() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
