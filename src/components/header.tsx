@@ -43,7 +43,7 @@ export default function Header(props: HeaderProps) {
           </li>
         </ul>
         <nav>
-          <ul className='flex'>
+          <ul className='flex flex-wrap justify-center'>
             <li className='m-1 text-lg font-demi'>
               <Link href='/about' className='flex p-1'>
                 About
@@ -52,6 +52,11 @@ export default function Header(props: HeaderProps) {
             <li className='m-1 text-lg font-demi'>
               <Link href='/donate' className='flex p-1'>
                 Donate
+              </Link>
+            </li>
+            <li className='m-1 text-lg font-demi'>
+              <Link href='/events' className='flex p-1'>
+                Events
               </Link>
             </li>
           </ul>

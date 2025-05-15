@@ -1,0 +1,18 @@
+$border-color: #E2E2B6;
+
+.event {
+  &-wrapper {
+    &:last-of-type {
+      border-bottom: 8px solid $border-color;
+    }
+  }
+  &-listing {
+    border-top: 8px solid $border-color;
+    padding: 1.5rem 0;
+  }
+
+  &-speaker {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+}
