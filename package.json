@@ -6,7 +6,7 @@
     "audit": "npm-run-all prettier:write prettier:check lint stylelint",
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
+    "start": "next",
     "lint": "next lint",
     "prettier:write": "prettier --write .",
     "prettier:check": "prettier --check .",

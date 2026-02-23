@@ -19,18 +19,23 @@ export default function Page() {
         </div>
         <div>
           <div className='container'>
-            <h2 className='font-semibold text-4xl md:text-5xl mb-10'>Healing to Flourish Series</h2>
+            <h2 className='font-semibold text-4xl md:text-5xl mb-10'>Upcoming Events</h2>
             {events.map((event) => (
               <div className='event-wrapper' key={event.name}>
                 <div className='event-listing flex flex-wrap'>
                   <div className='flex-auto'>
                     <h3 className='event-title text-[1.5rem] md:text-[2rem]'>{event.name}</h3>
                     <p className='event-speaker'>{event.presenter}</p>
-                    <p className='event-date mb-3'>{event.date} • 3:00-4:30 p.m.</p>
-                    <p>{event.location} | {event.address}</p>
-                    {/*{event.fbEvent ? (*/}
-                    {/*  <p className='mt-3'><a className='underline hover:no-underline' href={event.fbEvent}*/}
-                    {/*                         target='_blank'>RSVP on Facebook!</a></p>) : null}*/}
+                    {/*<p className='event-date mb-3'>{event.date} • 3:00-4:30 p.m.</p>*/}
+                    {/*<p>{event.location} | {event.address}</p>*/}
+                    <p>Be the first to know when tickets go on sale!&nbsp;
+                      <a
+                        className='text-primary-700 underline hover:no-underline'
+                        href='https://forms.gle/2axMMgnaFQmZJvy59' target="_blank"
+                      >
+                        Join our mailing list
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
