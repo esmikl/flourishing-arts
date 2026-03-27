@@ -1,8 +1,9 @@
 import Link from 'next/link';
-import ColorLogo from '../assets/Color-Logo.svg';
+import logo from '../assets/FA_Feb2326_Logo.png';
 import FB from '../assets/Facebook.svg';
 import Instagram from '../assets/Instagram.svg';
 import '../app/styles/header.scss';
+import Image from 'next/image';
 
 interface HeaderProps {
   bgColor?: 'light' | 'dark';
@@ -16,7 +17,12 @@ export default function Header(props: HeaderProps) {
     >
       <div>
         <Link href='/'>
-          <ColorLogo width='156' height='150' className='logo' />
+          <Image
+            src={logo}
+            width={200}
+            height={200}
+            alt="Flourishing Arts splash logo"
+          />
         </Link>
       </div>
       <div className='nav-wrapper flex flex-col'>
