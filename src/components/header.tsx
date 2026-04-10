@@ -1,9 +1,11 @@
+'use client';
 import Link from 'next/link';
 import logo from '../assets/FA_Feb2326_Logo.png';
 import FB from '../assets/Facebook.svg';
 import Instagram from '../assets/Instagram.svg';
 import '../app/styles/header.scss';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation'
 
 interface HeaderProps {
   bgColor?: 'light' | 'dark';
@@ -11,6 +13,7 @@ interface HeaderProps {
 
 export default function Header(props: HeaderProps) {
   const { bgColor } = props;
+  const pathname = usePathname();
   return (
     <header
       className={`${bgColor && bgColor === 'dark' ? 'text-white' : 'text-text'}`}
@@ -51,17 +54,17 @@ export default function Header(props: HeaderProps) {
         <nav>
           <ul className='flex flex-wrap justify-center'>
             <li className='m-1 text-lg font-demi'>
-              <Link href='/about' className='flex p-1'>
+              <Link href='/about' className={pathname === '/about/' ? 'flex p-1 active' : 'flex p-1'}>
                 About
               </Link>
             </li>
             <li className='m-1 text-lg font-demi'>
-              <Link href='/donate' className='flex p-1'>
+              <Link href='/donate' className={pathname === '/donate/' ? 'flex p-1 active' : 'flex p-1'}>
                 Donate
               </Link>
             </li>
             <li className='m-1 text-lg font-demi'>
-              <Link href='/events' className='flex p-1'>
+              <Link href='/events' className={pathname === '/events/' ? 'flex p-1 active' : 'flex p-1'}>
                 Events
               </Link>
             </li>

@@ -4,40 +4,17 @@
 }
 
 .home-hero {
-  background-image: url('../../assets/lotus_720px.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-
-  @media (width >= 960px) {
-    background-image: url('../../assets/lotus_960px.webp');
-    background-position: center 65%;
-  }
-
-  @media (width >= 1480px) {
-    background-image: url('../../assets/lotus_1480px.webp');
-  }
-
-  @media (width >= 2800px) {
-    background-image: url('../../assets/lotus_2800px.webp');
-  }
+  background-color: #171717;
 }
 
 .home-main {
-  height: calc(100vh - 190px);
+  min-height: calc(100vh - 248px);
 }
 
 .home-heading {
   font-size: clamp(2.875rem, 10vw, 8rem);
   font-weight: bold;
-  max-height: 18vw;
   line-height: 1.2;
-
-  @media (width >= 1480px) {
-    max-height: 10vw;
-  }
 }
 
 h1 {
