@@ -16,3 +16,7 @@ $border-color: #E2E2B6;
     font-size: 1.25rem;
   }
 }
+
+.events-main {
+  min-height: calc(100vh - 336px);
+}
