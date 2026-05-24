@@ -20,7 +20,7 @@ export default function Page() {
         <div>
           <div className='container'>
             <h2 className='font-semibold text-4xl md:text-5xl mb-10'>Upcoming Events</h2>
-            <p>Check back for our upcoming events!</p>
+            <p className='md:text-2xl'>Check back for our upcoming events!</p>
             {/*{events.map((event) => (*/}
             {/*  <div className='event-wrapper' key={event.name}>*/}
             {/*    <div className='event-listing flex flex-wrap'>*/}
