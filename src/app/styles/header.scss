@@ -31,7 +31,8 @@ nav {
       width: 0;
     }
 
-    &:hover {
+    &:hover,
+    &.active {
       &::after {
         left: 0;
         right: 0;
